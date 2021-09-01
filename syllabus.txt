@@ -1,0 +1,302 @@
+HTML 5.0
+********
+1) Schemantic Elements
+
+    => header
+
+    => main
+
+    => footer
+
+    => section
+
+    => nav
+
+    => audio
+
+    => video
+
+    => article
+
+    ----
+    ----
+    ----
+
+
+2) Storages
+
+    => Local Storage
+
+    => Session Storage
+
+
+3) Cookies
+
+4) Web Socket API
+
+5) Web Worker API
+
+6) Drag & Drop API
+
+7) Location API
+
+            ------
+            ------
+            ------
+
+8) Forms
+
+9) Animations
+
+10) Canvas & SVG
+
+CSS 3.0
+*******
+    1) Flex Box
+
+    2) Grid Box
+
+    3) Responsive Web Design
+
+            => RWD
+
+            => Media Queries
+
+    4) Dimensions
+
+            px
+
+            em
+
+            rem
+
+            vh
+
+            percentages
+
+    5) colors, background-colors,.......
+
+
+Day-1
+*****
+    - HTML Stands for Hyper Text Markup Language.
+
+    - Current Version of HTML is HTML 5.0
+
+    - HTML is used to develop the Static Web Pages.
+
+    - we will apply styles to the webpages by using CSS.
+
+        Ex.
+            colors
+
+            backgrounds
+
+            margins
+
+            paddings
+
+            ----
+            ----
+            ----
+    - css stands for cascading style sheet.
+
+    - Current Version of CSS is CSS 3.0
+
+    - we will make dynamic webpages with the help of JavaScript.
+
+    - HTML 5.x supports API'S, so HTML 5.x success in market.
+
+        => Schemantic Elements
+
+                Ex.
+                        header
+
+                        main
+
+                        footer
+
+                        aside
+
+                        nav
+
+                        audio
+
+                        video
+
+        => Web Socket API
+
+        => Location API
+
+        => Web Worker API
+
+        => Canvas API
+
+        => SVG API
+
+                -------
+                -------
+                -------
+
+    - we will save the HTML files with ".htm" or ".html" extension.
+
+    - we will execute web pages (HTML Files) with the help of browsers.
+
+        Ex.
+                Google Chrome
+
+                Mozila
+
+                Netscape
+
+                Opera
+
+                ----
+                ----
+                ----
+
+    - Visual Studio Code is Suggestable IDE to Build the webpages.
+
+    - Visual Studio Code also called as VSCode and Given by Microsoft.
+
+    - VSCode IDE is Open Souerce IDE.
+
+Structure of webpage
+********************
+DOCTYPE 
+
+ROOT ELEMENT
+
+    HEAD SECTION
+
+    BODY SECTION
+
+
+DOCTYPE Representing the version of HTML.
+
+<!DOCTYPE html>     -----    HTML5 Version
+
+<html></html> tag, Representing the root element.
+
+<head></head> tag, used to represent the header section.
+
+<body></body> tag, used to represent the body section.
+
+Ex.
+***
+<!DOCTYPE html>
+<html>
+    <head>
+        //META DATA
+        //data about webpage called as META DATA
+        //Ex. author, description, title,......
+        <title></title>
+        <style></style>
+        <link></link>
+        <script></script>
+    </head>
+
+    <body>
+            //main content
+            //Ex. images, tables, audio, video,.....
+    </body>
+</html>
+
+
+Schemantic Elements
+*******************
+    - HTML5 provides the Schemantic Elements.
+
+    - Because of Schemantic Elements Readability of webpages increses.
+
+
+1) header
+
+2) main
+
+3) footer
+
+4) aside
+
+5) nav
+
+6) article
+
+7) section
+
+8) audio
+
+9) video
+
+----
+----
+----
+
+Ex1.
+***
+
+header , main , footer
+**********************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
