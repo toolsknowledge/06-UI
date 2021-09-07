@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Storages API</title>
+        <style>
+            fieldset{
+                border: 1px solid red;
+                border-radius: 10px;
+                width: 25%;
+                margin: 50px auto;
+            }
+            legend{
+                background-color: yellow;
+                color: red;
+                padding: 5px;
+                border: 1px solid red;
+                border-radius: 5px;
+            }
+            label{
+                display: block;
+                margin: 10px 0px;
+                font-family: Comic Sans MS;
+                background-color: yellow;
+                width: 25%;
+                text-align: center;
+            }
+            input{
+                width: 300px;
+                border-radius: 5px;
+                height: 25px;
+            }
+            article{
+                margin-bottom: 10px;
+            }
+            button{
+                display: block;
+                width: 300px;
+                margin-bottom: 10px;
+                background-color: yellow;
+                border: 1px solid red;
+                padding: 5px;
+                border-radius: 10px;
+            }
+        </style>
+    </head>
+    <body>
+       <fieldset>
+           <legend>Storages API</legend>
+           <article>
+               <label>Email</label>
+               <input type="email" id="storageemail">
+           </article>
+
+           <article>
+                <label>Password</label>
+                <input type="password" id="storagepassword">
+            </article>
+
+            <article>
+                <button onclick="store()">Store</button>
+                <button onclick="read()">Read</button>
+                <button onclick="remove()">Delete</button>
+            </article>
+       </fieldset>
+    </body>
+    <script>
+        function store(){
+           obj = {
+               "email":document.getElementById("storageemail").value,
+               "password":document.getElementById("storagepassword").value
+           }
+           window.localStorage.setItem("login_details",JSON.stringify(obj));
+        } 
+
+        function read(){
+            str = window.localStorage.getItem("login_details");
+            obj1 = JSON.parse(str);
+            console.log( obj1 );
+        }
+
+        function remove(){
+            window.localStorage.removeItem("login_details");
+        }
+
+    </script>
+</html>
