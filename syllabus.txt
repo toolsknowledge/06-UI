@@ -18,9 +18,11 @@ HTML 5.0
 
     => article
 
-    ----
-    ----
-    ----
+    => section
+    
+    => details
+    
+    => summary
 
 
 2) Storages

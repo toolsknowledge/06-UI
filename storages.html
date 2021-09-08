@@ -61,25 +61,35 @@
                 <button onclick="read()">Read</button>
                 <button onclick="remove()">Delete</button>
             </article>
+
+            <article>
+                <p id="result"></p>
+            </article>
        </fieldset>
     </body>
     <script>
         function store(){
-           obj = {
-               "email":document.getElementById("storageemail").value,
-               "password":document.getElementById("storagepassword").value
-           }
-           window.localStorage.setItem("login_details",JSON.stringify(obj));
+            //local stroage
+            let jsonobj = {
+                "email": document.getElementById("storageemail").value,
+                "password" : document.getElementById("storagepassword").value
+            };         
+            //window.localStorage.setItem("login_details",JSON.stringify(jsonobj));
+
+            window.sessionStorage.setItem("login_details",JSON.stringify(jsonobj));
         } 
 
         function read(){
-            str = window.localStorage.getItem("login_details");
-            obj1 = JSON.parse(str);
-            console.log( obj1 );
+            //let str = window.localStorage.getItem("login_details");
+            let str = window.sessionStorage.getItem("login_details");
+            let obj1 = JSON.parse(str);
+            document.getElementById("result").innerHTML = obj1.email+"...."+obj1.password;
         }
 
         function remove(){
-            window.localStorage.removeItem("login_details");
+            //window.localStorage.removeItem("login_details");
+            window.sessionStorage.removeItem("login_details");
+            document.getElementById("result").innerHTML = "";
         }
 
     </script>
