@@ -1,0 +1,11 @@
+<script>
+    if(window.Worker){
+       let thread1 = new Worker("reverse.js");
+       thread1.postMessage("Welcome");
+       thread1.onmessage = function(e){
+           console.log(e.data);
+       }
+    }else{
+        console.log("webworker not supported");
+    }
+</script>

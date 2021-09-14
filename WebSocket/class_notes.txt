@@ -1,0 +1,20 @@
+Web Socket API
+**************
+    - Web Socket API provided by HTML5.0
+
+    - Web Socket API, used to build the Chat Applications.
+
+
+    > yarn add websocket
+
+        (or)
+
+    > npm install websocket
+
+
+
+
+
+
+
+
