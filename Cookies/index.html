@@ -1,0 +1,45 @@
+<!--
+                    cookies                 local storage           session storage
+                    ***************************************************************
+
+capacity            4kb                     5 MB / 10 MB            5MB / based on RAM
+
+Browsers            HTML 4.X / HTML 5.X     HTML 5.X                HTML 5.X
+
+access              any window              any window              same window
+
+Expaires            Manually Set            Never                   on window close
+
+Storage             Browser/Server          Browser                 Browser
+
+Request             Traverse from client    Never                   Never
+                    to server
+-->
+
+<script>
+    window.localStorage.setItem("key1","Hello_1");
+    window.sessionStorage.setItem("key1","Hello_1");
+
+    document.cookie = "key1=Hello_1";
+    document.cookie = "key2=Hello_2;expires="+new Date(2021,8,18).toUTCString();
+
+    document.cookie = "key1=";
+    
+    console.log( document.cookie );
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
