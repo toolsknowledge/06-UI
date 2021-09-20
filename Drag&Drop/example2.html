@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            section{
+                width: 320px;
+                height: 500px;
+                border: 1px solid red;
+                display: inline-block;
+                margin-right: 20px;
+            }
+            article{
+                width: 300px;
+                height: 250px;
+                border: 1px solid forestgreen;
+                margin-left: 10px;
+                margin-top: 10px;
+            }
+            img{
+                width: 280px;
+                height: 200px;
+                margin-top: 10px;
+                margin-left: 10px;
+            }
+        </style>
+
+        <script>
+            function dropAllow(event){
+                event.preventDefault();
+            }
+
+            function drag(event){
+                if(event.target.id === "logo1"){
+                    event.dataTransfer.setData("image1",event.target.id);
+                }
+            }
+
+            function drop(event){
+                event.preventDefault();
+                if(event.target.id === "article2"){
+                    let id = event.dataTransfer.getData("image1");
+                    event.target.appendChild(document.getElementById(id));
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <section>
+            <article></article>
+            <img src="logo.jpg" draggable="true" id="logo1" ondragstart="drag(event)">
+        </section>
+
+        <section>
+            <article id="article2" ondrop="drop(event)" ondragover="dropAllow(event)"></article>
+            <img src="logo.jpg">
+        </section>
+
+        <section>
+            <article></article>
+            <img src="logo.jpg">
+        </section>
+
+    </body>
+</html>

@@ -52,6 +52,7 @@ HTML 5.0
 
 10) Canvas & SVG
 
+11) WebSQL
 CSS 3.0
 *******
     1) Flex Box
