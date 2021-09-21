@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Web SQL API</title>
+    </head>
+    <body>
+
+    </body>
+    <script>
+        let dbObj = openDatabase("ui",1.0,"ashokit training classes",2*1024*1024);
+        dbObj.transaction(function(txn){
+            txn.executeSql("create table products(p_id unique,p_name varchar(20),p_cost number,p_image varchar(20))");
+            txn.executeSql("insert into products (p_id,p_name,p_cost,p_image) values (1,'shirt1',1000,'https://mernclassbucket.s3.us-east-2.amazonaws.com/p1.jpg')");
+            txn.executeSql("insert into products (p_id,p_name,p_cost,p_image) values (2,'shirt2',1000,'https://mernclassbucket.s3.us-east-2.amazonaws.com/p2.jpg')");
+            txn.executeSql("insert into products (p_id,p_name,p_cost,p_image) values (3,'shirt3',1000,'https://mernclassbucket.s3.us-east-2.amazonaws.com/p3.jpg')");
+            txn.executeSql("insert into products (p_id,p_name,p_cost,p_image) values (4,'pant1',1000,'https://mernclassbucket.s3.us-east-2.amazonaws.com/p4.jpg')");
+            txn.executeSql("insert into products (p_id,p_name,p_cost,p_image) values (5,'pant2',1000,'https://mernclassbucket.s3.us-east-2.amazonaws.com/p5.jpg')");
+            txn.executeSql("insert into products (p_id,p_name,p_cost,p_image) values (6,'pant3',1000,'https://mernclassbucket.s3.us-east-2.amazonaws.com/p6.jpg')");
+        });
+
+        
+        dbObj.transaction(function(tx){
+            document.write(`<table border="1"
+                                   align="center"
+                                   cellpadding="10px"
+                                   cellspacing="10px">
+                <tr>
+                    <th>P_ID</th>
+                    <th>P_NAME</th>
+                    <th>P_COST</th>
+                    <th>P_IMAGE</th>
+                </tr>`);
+            tx.executeSql("select * from products",[],function(tx,result){
+               
+                for(let i=0;i<result.rows.length;i++){
+                    let rec = result.rows[i];
+                    document.write(`
+                        <tr>
+                            <td>${rec.p_id}</td>
+                            <td>${rec.p_name}</td>
+                            <td>${rec.p_cost}</td>
+                            <td><img width="100px" height="100px" src=${rec.p_image}></td>
+                        </tr>
+                    `);
+                }
+
+                document.write(`</table>`);
+               
+            });
+        });
+    </script>
+</html>
+
+
+
+
+
+
+
