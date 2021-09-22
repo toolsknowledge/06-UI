@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Canvas API</title>
+    </head>
+    <body onload="load()">
+        <canvas id="my_canvas"
+                width="300px"
+                height="300px"
+                style="border: 1px solid green;"></canvas>
+    </body>
+    <script>
+        function load(){
+            let my_canvas = document.getElementById("my_canvas");
+            let ctx = my_canvas.getContext("2d");
+
+            // ctx.fillStyle="red";
+            // ctx.fillRect(20,20,260,260);
+
+            // ctx.fillStyle = "blue";
+            // ctx.fillRect(40,40,220,220);
+
+            // ctx.fillStyle = "salmon";
+            // ctx.fillRect(60,60,180,180);
+
+            // ctx.strokeStyle = "yellow";
+            // ctx.strokeRect(80,80,140,140);
+
+
+            ctx.strokeStyle = "red";
+            ctx.moveTo(0,0);
+            ctx.lineTo(200,100);
+            ctx.stroke();
+
+            
+            ctx.moveTo(200,0);
+            ctx.lineTo(200,100);
+            ctx.stroke();
+
+
+            ctx.moveTo(300,0);
+            ctx.lineTo(0,300);
+            ctx.stroke();
+
+
+            ctx.moveTo(0,0);
+            ctx.lineTo(300,300);
+            ctx.stroke();
+
+
+        }
+    </script>
+</html>
