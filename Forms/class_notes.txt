@@ -1,0 +1,85 @@
+Forms / Web Form 2.0
+*********************
+
+    From "HTML5" onwards forms called as "Web Forms 2.X"
+
+    "Web Forms 2.x" Containes more features Compared to HTML4.X forms.
+
+        => validations support
+
+        => tags features enhancements
+
+Ex.
+    <input>
+
+
+    HTML 4.X                                        HTML 5.X
+    ******************************************************************
+    type = "text"
+
+    type = "password"
+
+    type = "checkbox"
+
+    type = "radio"
+
+    type = "submit"
+
+    type = "button"
+
+    type = "textarea"
+
+    type = "file"
+
+    type = "image"
+
+    type = "hidden"                                         
+                                                        type = "datetime"
+
+                                                        type = "datetime-local"
+
+                                                        type="date"
+
+                                                        type = "month"
+
+                                                        type = "week"
+
+                                                        type = "time"
+
+                                                        type = "number"
+
+                                                        type = "range"
+
+                                                        type = "url"
+
+                                                        type = "email"
+
+                                                        type = "tel"
+
+                                                        type = "color"
+
+                                                        ----
+                                                        ----
+                                                        ----
+                                                        
+
+
+=> <form></form> tag, used to create the forms
+
+    Attributes
+    **********
+
+    method = "GET" / "POST" / "PUT"
+
+    action = "/endpoint"
+
+
+    Ex.
+
+    <form action="http://localhost:8080/login" method = "POST">
+
+    </form>
+
+
+
+

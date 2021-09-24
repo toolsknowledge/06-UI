@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Web Forms 1.x</title>
+    </head>
+    <body>
+
+        <fieldset style="width: 20%;margin: 30px auto;">
+        <legend>Registration Form</legend>
+        <form action="/ashokit" method="POST">
+           <p>
+               <label>Title</label> <br><br>
+               <label>
+                   <input type="radio" name="title" value="mr">
+                   Mr
+               </label>
+               <label>
+                   <input type="radio" name="title" value="mrs">
+                   Mrs
+               </label>
+               <label>
+                 <input type="radio" name="title" value="miss">
+                   Miss
+               </label>
+           </p>
+
+           <p>
+               <label>Fisrt Name</label> <br>
+               <input type="text" name="first_name">
+           </p>
+
+           <p>
+               <label>Last Name</label> <br>
+               <input type="text" name="last_name">
+           </p>
+
+           <p>
+               <label>Email</label> <br>
+               <input type="email" name="user_email">
+           </p>
+
+           <p>
+               <label>Mobile </label> <br>
+               <input type="tel" name="user_mobile">
+           </p>
+
+           <p>
+               <label>Password</label> <br>
+               <input type="password" name="user_password">
+           </p>
+
+           <p>
+               <label>Course</label><br>
+               <select>
+                   <option>Java FullStack</option>
+                   <option>UI FullStack</option>
+                   <option>Net FullStack</option>
+                   <option>DataScience FullStack</option>
+               </select>
+           </p>
+
+           <p>
+               <label>
+                   <input type="checkbox" value="terms"> I Agree <a href="http://ashokit.in">Terms & Conditions</a>
+               </label>
+           </p>
+
+
+           <p>
+               <button>Signup</button>
+               <button type="reset">Reset Form</button>
+           </p>
+
+
+
+
+        </form>
+    
+    </fieldset>
+    </body>
+</html>
