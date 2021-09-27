@@ -1,0 +1,126 @@
+<!--
+    range
+    =====
+    min
+    max
+    step
+    value
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Web Forms 2.0</title>
+        <style>
+            #my-range{
+                margin: 5px;
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+       
+        <form oninput="result.value=parseInt(my_range.value)+parseInt(my_number.value)">
+            <input type="range"
+                   min="0"
+                   max="100"
+                   step="10"
+                   value="50"
+                   id="my_range"
+                  >
+
+            <input type="number" 
+                   value="50"
+                   id="my_number"
+                  > = 
+            <output id="result">60</output>
+            
+        </form>
+       
+       
+       
+    <form action="/test" method="POST">
+            
+            <!--
+                output
+                ------
+            -->
+            
+        
+        
+            <!--
+                range
+                *****
+            -->
+            <input type="range" min="0" max="100" step="10" value="50" id="my-range">
+            <label>Volume</label>
+
+            <br><br>
+
+            <!--
+                color
+                -----
+                type = "color"
+                value = "red"
+            -->
+            <input type="color" value="#ff0000">
+            <label>Choose Color</label>
+
+            <br><br>
+            <!--
+                date
+                ----
+                type="date"
+                value="yyyy-mm-dd"
+                min=""
+                max=""
+            -->
+            <input type="date"
+                   value="2021-09-27"
+                   min="2021-01-01"
+                   max="2021-12-31">
+
+
+            <br><br>
+            <!--
+                datetime-local
+                --------------
+                value="2021-09-27T09:32"
+                min="2021-09-27T00:00"
+                max="2021-09-30T00:00"
+            -->
+            <input type="datetime-local" value="2021-09-27T10:34"
+                                         min="2021-09-27T10:34"
+                                         max="2021-09-30T10:34">
+
+            <br><br>
+            <input type="time" value="10:35">
+
+            <br><br>
+            <input type="email" pattern=".+@ashokit\.in" required size="20">
+
+            <br><br>
+            <input type="file"
+                   accept="image/png,image/jpeg">
+            <label>Choose Image</label>
+
+            <br><br>
+            <input type="search">
+
+            <br><br>
+            <input type="url" pattern="https://.*" placeholder="http://ashokit.in" size="20">
+
+            <br><br>
+            <input type="week"
+                   min="2021-W18"
+                   max="2021-W30">
+
+            <br><br>
+            <input type="image" src="logo.jpg" width="50px" alt="Login">
+
+            <br><br>
+            <input type="hidden" value="AshokIT">
+
+
+       </form>
+    </body>
+</html>
