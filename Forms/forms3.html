@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Web Forms 2.0</title>
+        <style>
+            fieldset{
+                width: 40%;
+                margin: 50px auto;
+                border:1px solid red;
+                border-radius: 30px;
+            } 
+            legend{
+                background-color: yellow;
+                color: red;
+                padding: 5px;
+                border: 1px solid red;
+                border-radius: 20px;
+            } 
+            label{
+                display: block;
+                margin: 5px 10px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            input[type="text"],input[type="email"],input[type="date"],input[type="time"],select{
+                width: 500px;
+                margin: 5px 12px;
+                height: 20px;
+                border: 1px solid gray;
+                border-radius: 10px;
+                outline: none;
+            }
+
+            article{
+                margin-bottom: 10px;
+            }
+
+           
+        </style>
+    </head>
+    <body>
+        <form oninput="net_sal.value=parseInt(sal.value)+parseInt(sal.value)*0.2" action="/advjava" method="POST">
+            <fieldset>
+                <legend>Registration</legend>
+
+                <article>
+                    <label>First Name</label>
+                    <input type="text" placeholder="Enter First Name" autofocus>
+                </article>
+
+                <article>
+                    <label>Last Name</label>
+                    <input type="text" placeholder="Enter Last Name">
+                </article>
+
+
+                <article>
+                    <label>Email</label>
+                    <input type="email" 
+                           placeholder="Enter Working Email"
+                           pattern=".+@ashokit\.in"
+                           required>
+                </article>
+
+                <article>
+                    <label>DOB</label>
+                    <input type="date"
+                           placeholder="Date Of Birth"
+                           value="1987-04-01"
+                           min="1980-01-01"
+                           max="2030-01-01">
+                </article>
+
+
+                <article>
+                    <label>Time of Birth</label>
+                    <input type="time" value="10:30" min="00:00" max="00:00">
+                </article>
+
+
+                <section>
+                    <label>Gender</label>
+                    <label class="gender_label" style="display: inline-block; margin-right: 50px;">
+                        <input type="radio" name="gender" value="male">
+                        Male
+                    </label>
+                    <label style="display: inline-block;">
+                        <input type="radio" name="gender" value="female">
+                        Female
+                    </label>
+                </section>
+
+
+                <section>
+                    <label>Choose Options</label>
+                    <article>
+                        <label style="display: inline-block;margin-right: 100px;">
+                            <input type="checkbox" name="subjects" value="Angular12"> Angular12
+                        </label>
+                        <label style="display: inline-block;">
+                            <input type="checkbox" name="subjects" value="ReactJS"> ReactJS
+                        </label>
+                    </article>
+
+                    <article>
+                        <label style="display: inline-block;margin-right: 125px;">
+                            <input type="checkbox" name="subjects" value="vuejs"> VueJS
+                        </label>
+                        <label style="display: inline-block;">
+                            <input type="checkbox" name="subjects" value="java"> Spring boot
+                        </label>
+                    </article>
+                </section>
+
+                <section>
+                    <label>Choose Country</label>
+                    <select name="country">
+                        <option value="india">India</option>
+                        <option value="usa">America</option>
+                        <option value="uk">Londan</option>
+                        <option value="russia">Russia</option>
+                        <option value="china">China</option>
+                    </select>
+                </section>
+
+
+                <section>
+                    <label>Address:</label>
+                    <textarea cols="50" rows="10" style="margin-left: 12px;" name="address"></textarea>
+                </section>
+
+                <section>
+                    <label>Salary  
+                        <input type="range" 
+                               min="10000" 
+                               max="100000" 
+                               value="50000"  
+                               id="sal" 
+                               step="10000"> = 
+                        <output id="net_sal">50000</output>
+                    </label>
+                </section>
+            
+
+
+
+
+            </fieldset>
+        </form>
+
+    </body>
+</html>
