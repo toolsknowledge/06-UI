@@ -1,0 +1,69 @@
+                                            CSS
+                                            ***
+
+    - CSS Stands for Cascading Style Sheet.
+
+    - CSS, used to apply the styles to the static web pages.
+
+        Ex.
+                color
+
+                background-color
+
+                margins
+
+                paddings
+
+                font-family
+
+    - we can include "css" to webpages in 3 ways.
+
+            1) style attribute
+
+            2) <style></style>
+
+            3) <link>
+
+    Ex.
+
+        demo.html
+        ---------
+        <!DOCTYPE html>
+        <html>
+            <head></head>
+            <body>
+                <p style="......">     //inline styles
+            </body>
+        </html>
+
+
+        demo.html
+        ---------
+
+        <html>
+            <head> 
+                <style>
+                        CSS
+                </style> 
+            </head>
+        </html>
+
+
+        demo.html
+        ---------
+
+        <html>
+            <head>
+                <link>    //external css
+            </head>
+        </html>
+
+    - Current version of CSS is CSS3.0
+
+
+
+
+
+
+
+
