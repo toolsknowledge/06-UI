@@ -48,18 +48,17 @@ HTML 5.0
 
 8) Forms
 
-9) Animations
-
 10) Canvas & SVG
 
 11) WebSQL
+
 CSS 3.0
 *******
-    1) Flex Box
+    1) Flex Box   3 hrs
 
-    2) Grid Box
+    2) Grid Box   3 hrs
 
-    3) Responsive Web Design
+    3) Responsive Web Design    10 hrs
 
             => RWD
 
@@ -79,6 +78,9 @@ CSS 3.0
 
     5) colors, background-colors,.......
 
+    6) absolute,relative,static,sticky,.......
+
+    7) Animations
 
 Day-1
 *****

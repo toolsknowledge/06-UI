@@ -3,6 +3,20 @@
     <head>
         <title>Web Forms 2.0</title>
         <style>
+            input[type="submit"],input[type="reset"]{
+                margin:10px 12px;
+                width: 200px;
+                height: 30px;
+                border: 1px solid red;
+                border-radius: 20px;
+                background: linear-gradient(45deg,red,black);
+                color: white;
+            }
+
+            input[type="submit"]:hover,input[type="reset"]:hover{
+                background: linear-gradient(45deg,yellow,red);
+            }
+
             fieldset{
                 width: 40%;
                 margin: 50px auto;
@@ -21,7 +35,7 @@
                 margin: 5px 10px;
                 font-family: Arial, Helvetica, sans-serif;
             }
-            input[type="text"],input[type="email"],input[type="date"],input[type="time"],select{
+            input[type="text"],input[type="email"],input[type="date"],input[type="time"],select,input[type="tel"]{
                 width: 500px;
                 margin: 5px 12px;
                 height: 20px;
@@ -44,7 +58,7 @@
 
                 <article>
                     <label>First Name</label>
-                    <input type="text" placeholder="Enter First Name" autofocus>
+                    <input type="text" placeholder="Enter First Name" autofocus required>
                 </article>
 
                 <article>
@@ -141,7 +155,21 @@
                 </section>
             
 
+                <section>
+                    <label>Mobile</label>
+                    <input type="tel" placeholder="Enter Mobile Number" value="+91-">
+                </section>
 
+                <section>
+                    <label>Choose Image 
+                        <input type="file" accept="image/png,image/jpeg">
+                    </label>
+                </section>
+
+                <section>
+                    <input type="submit">
+                    <input type="reset">
+                </section>
 
 
             </fieldset>
