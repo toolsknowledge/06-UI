@@ -62,6 +62,45 @@
 
 
 
+Day - 1
+*******
+
+apply css by using 
+
+   1) selector
+
+   2) id
+
+   3) class
+
+   when to choose selector, id and class
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
