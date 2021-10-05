@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Priorty CSS</title>
+        <style>
+            #my_id{
+                background-color: green;
+            }
+            .my_class{
+                background-color: blue;
+            }
+            article{
+                background-color: brown;
+            }
+        </style>
+    </head>
+    <body>
+        <article style="background-color: red;" id="my_id">Atricle-1</article>
+        <article id="my_id" class="my_class">Article-2</article>
+        <article class="my_class" id="my_id">Article-3</article>
+        <article>Atricle-4</article>
+    </body>
+</html>
