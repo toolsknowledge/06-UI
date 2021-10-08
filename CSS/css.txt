@@ -91,6 +91,92 @@ POSITIONS
 5) static
 
 
+                                                CSS3
+                                                ****
+1) Flex Box
+
+
+2) Grid Box
+
+
+3) CSS3 Media Queries    (Responsive Web Design)
+
+   
+4) Preprocessors
+
+    SASS
+
+    LESS
+
+5) Psudo Elements
+
+        ::first
+
+        ::last
+
+        ----
+        ----
+        ----
+
+6) Animations
+
+
+7) Dimesions
+
+    px
+
+    rem
+
+    em
+
+    percentages
+
+
+Flex Box
+********
+    used to arrange the DOM Elements (div,h1,table,p,.....) either x-axis or y-axis
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
