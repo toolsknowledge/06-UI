@@ -3,61 +3,57 @@
     <head>
         <title>CSS3 Flex Box</title>
         <style>
-
-            .flex_class{
-                display: flex;
-                
+            .common{
+                height: 50px;
+                color: white;
             }
-
-
-          .common{
-               height: 50px;
-               color: white;
-           }
-           .item_1{
-               background-color: red;
-           }
-           .item_2{
-               background-color: green;
-           }
-           .item_3{
-               background-color: blue;
-           }
-           .item_4{
-               background-color: pink;
-           }
-           .item_5{
-               background-color:plum;
-           }
-           .item_6{
-               background-color:purple;
-           }
-           .item_7{
-               background-color: saddlebrown;
-           }
-           .item_8{
-               background-color: sienna;
-           }
-           .item_9{
-               background-color: springgreen;
-           }
-
-
-
-
+            .item-1{
+                background-color: tomato;
+            }
+            .item-2{
+                background-color: gray;
+            }
+            .item-3{
+                background-color: green;
+            }
+            .item-4{
+                background-color: palevioletred;
+            }
+            .item-5{
+                background-color: yellow;
+            }
+            .item-6{
+                background-color: yellowgreen;
+            }
+            .item-7{
+                background-color: turquoise;
+            }
+            .item-8{
+                background-color: thistle;
+            }
+            .item-9{
+                background-color: tan;
+            }
+            .container{
+                border: 1px solid red;
+                padding: 3px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+            }
         </style>
     </head>
     <body>
-        <div class="flex_class">
-            <div class="common item_1">Item-1</div>
-            <div class="common item_2">Item-2</div>
-            <div class="common item_3">Item-3</div>
-            <div class="common item_4">Item-4</div>
-            <div class="common item_5">Item-5</div>
-            <div class="common item_6">Item-6</div>
-            <div class="common item_7">Item-7</div>
-            <div class="common item_8">Item-8</div>
-            <div class="common item_9">Item-9</div>
+        <div class="container">
+            <div class="common item-1">Item-1</div>
+            <div class="common item-2">Item-2</div>
+            <div class="common item-3">Item-3</div>
+            <div class="common item-4">Item-4</div>
+            <div class="common item-5">Item-5</div>
+            <div class="common item-6">Item-6</div>
+            <div class="common item-7">Item-7</div>
+            <div class="common item-8">Item-8</div>
+            <div class="common item-9">Item-9</div>
         </div>
     </body>
 </html>
