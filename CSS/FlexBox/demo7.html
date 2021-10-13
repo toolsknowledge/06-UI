@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Flex Box</title>
+        <style>
+            .common{
+                height: 50px;
+                color: white;
+            }
+            .item-1,.item-2,.item-3,.item-4,.item-5{
+                margin: 10px;
+                padding: 10px;
+                font-size: 20px;
+                text-align: center;
+            }
+            .item-1{
+                background-color: red;
+                flex: 1 1 10px;
+                
+            }
+            .item-2{
+                background-color: green;
+                flex: 1 1 10px;
+            }
+            .item-3{
+                background-color: hotpink;
+            }
+            .item-4{
+                background-color: khaki;
+            }
+            .item-5{
+                background-color: lawngreen;
+            }
+            .container{
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="common item-1">Item-1</div>
+            <div class="common item-2">Item-2</div>
+            <div class="common item-3">Item-3</div>
+            <div class="common item-4">Item-4</div>
+            <div class="common item-5">Item-5</div>
+        </div>
+    </body>
+</html>

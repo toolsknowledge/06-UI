@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Flex Box</title>
+        <style>
+            img{
+                width: 200px;
+            }
+            .container{
+                display: flex;
+                width: 500px;
+                height: 500px;
+                border: 1px solid red;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .child_1{
+                flex: 1;
+                border-right: 1px solid green;
+                height: 500px;
+            }
+
+            .child_2{
+                flex: 1;
+            }
+
+            .c_1{
+                
+                height: 50%;
+                border: 1px solid red;
+            }
+            .c_2{
+                flex: 1;
+                height: 50%;
+            }
+           
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            
+            <div class="child_1">
+                <div class="c_1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas deleniti perferendis sequi neque assumenda, sit enim ullam aut excepturi molestiae repellat itaque! Aliquid accusamus non iusto sapiente itaque dolorum maxime placeat recusandae tenetur minus iste, consectetur, praesentium ratione ex, labore a facere. Exercitationem sed sapiente totam? Est, iure nemo. Maiores.</div>
+                <div class="c_2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat omnis, reprehenderit quo quasi blanditiis adipisci iste, doloremque quibusdam alias fuga voluptate sequi nobis porro expedita accusamus quisquam fugit neque quos recusandae consequatur amet obcaecati a modi eum! Aperiam, libero qui! Dolor expedita enim mollitia accusantium quos nesciunt laudantium, minus magnam!</div>
+            </div>
+
+            <div class="child_2">
+                <img src="logo.jpg">
+            </div>
+        </div>
+    </body>
+</html>
