@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            div{
+                width: 100px;
+                height: 100px;
+                background-color: red;
+                position: relative;
+                animation-name: ashokit;
+                animation-duration: 4s;
+                animation-delay: 2s;
+                animation-iteration-count: 3;
+                animation-direction: alternate-reverse;
+            }
+            @keyframes ashokit {
+                0%{
+                    background-color: rosybrown;
+                    top: 0px;
+                    left: 0px;
+                }
+
+                33%{
+                    background-color: seagreen;
+                    left: 200px;
+                    top: 0px;
+                }
+
+                66%{
+                    background-color: skyblue;
+                    top: 200px;
+                    left: 200px;
+                }
+
+                100%{
+                    background-color: springgreen;
+                    left: 0px;
+                    top: 200px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div></div>
+    </body>
+</html>
