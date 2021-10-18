@@ -1,0 +1,108 @@
+<!--
+    1) ::first-letter
+
+    2) ::first-line
+
+    3) ::selection
+
+    4) ::placeholder
+
+    5) ::before
+
+    6) ::after
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            li::selection{
+                background-color: yellow;
+            }
+
+            li::first-letter{
+                color: red;
+                font-family: Comic Sans MS;
+            }
+
+            li::first-line{
+                background-color: violet;
+            }
+
+            ::placeholder{
+                color: red;
+            }
+
+
+           
+           
+
+           
+
+
+
+
+            .required::before{
+                content: "";
+                width: 10px;
+                height: 10px;
+                background-color: red;
+                display: block;
+            }
+
+           
+
+            .required::after{
+                content: "";
+                width: 10px;
+                height: 10px;
+                background-color: royalblue;
+                display: block;
+            }
+
+            [data-tooltip]:hover::before{
+                content: attr(data-tooltip);  
+                position: absolute;
+                top: 35px;
+                background-color: gray;
+                padding: 10px;
+                border: 1px solid red;
+            }
+
+        </style>
+    </head>
+
+    <body>
+
+        <button data-tooltip="AshokIT">ClickMe</button>
+
+
+        <br><br><br><br>
+
+
+
+        <label class="required">Uname</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+        
+
+
+        <input type="text" placeholder="Enter Uname">
+
+
+
+
+
+        <h1>AshokIT</h1>
+        
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam vitae dolor doloribus assumenda dolores non, incidunt nulla laudantium totam quisquam placeat error magnam esse eveniet? Vitae quas distinctio reiciendis amet omnis libero dicta totam sed. Voluptatum libero quaerat error? Omnis facere voluptate neque nisi possimus placeat molestiae illum, tenetur laboriosam, sint commodi dolorum quidem. Vitae unde reiciendis tenetur, esse, a voluptate voluptatibus inventore voluptates deleniti molestias nam. Amet, sunt praesentium odit tempora consectetur deleniti itaque qui voluptas necessitatibus quidem dolores temporibus repellat animi nesciunt. Modi exercitationem at dolores ut ea consectetur ducimus culpa officiis voluptatibus quidem. Illo aspernatur eius praesentium, voluptas a molestiae error incidunt ad quam vitae asperiores facere sit amet nesciunt eligendi modi repellat nemo nulla excepturi. Magni reprehenderit ducimus deleniti delectus alias neque amet quisquam optio id ut quas ipsa molestiae doloribus quaerat, veniam eum provident consectetur magnam nesciunt suscipit laudantium necessitatibus. Perspiciatis officia, possimus itaque nulla natus beatae a at placeat ad unde iusto quae laudantium earum nobis perferendis sit aliquam sed, fugiat officiis ut hic temporibus nostrum excepturi consequatur! Iste a est ipsam nisi, voluptates delectus ab quasi labore vero, voluptatibus deserunt atque sunt nam quisquam! Quasi, porro quo. Architecto quae nulla voluptates beatae cum.</p>
+
+        <ul>
+            <li>Hello_1</li>
+            <li>Hello_2</li>
+            <li>Hello_3</li>
+            <li>Hello_4</li>
+            <li>Hello_5</li>
+        </ul>
+
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem repellat autem, voluptate dignissimos dolore debitis obcaecati nesciunt eligendi aliquid dicta? Praesentium fuga debitis odit ab maiores. Velit maxime consectetur aliquid? Consectetur quis cupiditate architecto labore veniam non adipisci laudantium? Consequuntur veritatis saepe earum. Architecto doloribus, culpa cum quia tempore nulla cupiditate soluta temporibus recusandae ullam et dolorem quisquam dolor expedita qui! Cumque, beatae doloremque. Placeat, exercitationem incidunt cum ea harum dolor delectus reiciendis ad praesentium iusto iure rem commodi doloribus, rerum eius nulla. Modi labore at repudiandae, eaque magni veritatis dignissimos ab dolorum temporibus dolores consectetur rem eos repellendus ad possimus maxime expedita voluptatibus pariatur voluptas consequuntur officia doloribus. Laborum atque mollitia enim labore ex vitae molestias, fugiat nemo quos tempora est corrupti aut eligendi maiores cupiditate dolor libero? Animi totam qui, numquam natus aliquam mollitia sint neque! Dolorum laudantium rerum officia accusamus enim sint sit vitae voluptates nesciunt itaque expedita consequatur qui id accusantium, cum voluptatum necessitatibus quae molestias sapiente voluptatem quisquam! Blanditiis, dignissimos veritatis a illum suscipit eligendi veniam quasi nam laboriosam! Sapiente delectus odio facere illum eaque, doloremque incidunt, aliquid harum ea enim omnis nesciunt corrupti velit porro dolores eum explicabo perferendis suscipit! Dicta deleniti explicabo qui.</p>
+    </body>
+</html>
