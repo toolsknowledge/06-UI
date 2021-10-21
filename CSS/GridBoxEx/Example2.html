@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Grid Box</title>
+        <style>
+            .parent>p:nth-child(odd){
+                background-color: #ddd;
+            }
+            p{
+                border: 1px solid red;
+            }
+            .parent{
+               display: grid;
+               grid-template-columns: repeat(3,1fr);
+               grid-gap: 1em;
+               grid-auto-rows: minmax(100px,auto);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="parent">
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias expedita unde provident debitis omnis eos! Tempora totam atque velit excepturi necessitatibus, corrupti illo incidunt pariatur quas accusamus culpa quia, cumque deleniti vitae cupiditate. Unde praesentium delectus consequuntur dicta similique ipsum iusto. Dolore nostrum perferendis praesentium? Facere sunt aspernatur dolore, expedita repellat architecto asperiores officia laudantium nulla quos quasi harum commodi! Doloribus sunt possimus aliquam, tenetur quod delectus at! Minus veritatis incidunt nihil ratione quam laborum voluptatibus, architecto nesciunt at sapiente, harum atque repudiandae qui quae nisi molestias fugiat accusamus iusto, fuga impedit eum! Minus quod odio minima libero quaerat magnam.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+    </body>
+</html>

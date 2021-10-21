@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Grid</title>
+        <style>
+
+            .parent{
+                height: 100vh;
+            }
+            
+            .parent>p{
+                border: 1px solid gray;
+                width: 100px;
+                height: 50px;
+            }
+            .parent{
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+                grid-gap: 1em;
+                justify-items: end;
+                align-items: end;
+            }
+
+            .parent>p:nth-child(5){
+                justify-self: start;
+            }
+
+            .parent>p:nth-child(4){
+                justify-self: start;
+            }
+
+            .parent>p:nth-child(2){
+                align-self: start;
+            }
+
+
+            .parent>p:nth-child(1){
+                justify-self: start;
+                align-self: start;
+            }
+
+            .parent>p:nth-child(7){
+                justify-self: left;
+            }
+
+            .parent>p:nth-child(3){
+                align-self: start;
+            }
+
+            .parent>p:nth-child(6){
+                justify-self: start;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="parent">
+            <p>P1</p>
+            <p>P2</p>
+            <p>P3</p>
+            <p>P4</p>
+            <p>P5</p>
+            <p>P6</p>
+            <p>P7</p>
+            <p>P8</p>
+            <p>P9</p>
+        </div>
+    </body>
+</html>

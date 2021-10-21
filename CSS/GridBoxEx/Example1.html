@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Grid Box Examples</title>
+        <style>
+            img{
+                width: 200px;
+                border: 1px solid red;
+            }
+
+            .parent{
+               display: grid;
+               grid-template-columns: 1fr 1fr;
+               grid-gap: 1em;
+               justify-items: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="parent">
+            <img src="images/p1.jpg">
+            <img src="images/p2.jpg">
+            <img src="images/p3.jpg">
+            <img src="images/p4.jpg">
+            <img src="images/p5.jpg">
+            <img src="images/p6.jpg">
+        </div>
+    </body>
+</html>

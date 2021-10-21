@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Grid</title>
+        <style>
+            .parent>div{
+                width: 200px;
+                height: 200px;
+                border: 1px solid gray;
+            }
+            .parent{
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+                grid-row-gap: 1em;
+                grid-column-gap: 1em;
+                justify-items: center;
+            }
+            img{
+                width: 50px;
+                border-radius: 50%;
+                border: 1px solid red;
+                cursor: pointer;
+            }
+
+            img:hover{
+                width: 75px;
+            }
+
+
+            .parent>div:nth-child(5){
+               display: grid;
+               grid-template-columns: repeat(3,1fr);
+               justify-items: center;
+               align-items: center;
+               
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="parent">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div>
+                <img src="images/p1.jpg">
+                <img src="images/p2.jpg">
+                <img src="images/p3.jpg">
+                <img src="images/p4.jpg">
+                <img src="images/p5.jpg">
+                <img src="images/p6.jpg">
+            </div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </body>
+</html>
