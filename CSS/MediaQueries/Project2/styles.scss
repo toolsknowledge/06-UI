@@ -1,0 +1,64 @@
+*{
+    margin: 0px 5px;
+    padding: 0px;
+    body{
+        box-sizing: border-box;
+        font-family: Comic Sans MS;
+    }
+}
+.container{
+    height: 100vh;
+}
+.header{
+    display: flex;
+    height: 10%;
+    justify-content: space-between;   
+    align-items: center;
+    &__menu{
+        display: flex;
+        gap: 15px;
+        font-size: 2.5vw;
+    }
+    &__logo{
+        font-size: 4vw;
+    }
+}
+.main{
+    display: flex;
+    height: 80%;
+    &__image{
+        flex: 1;
+        background-image: url('./images/logo.jpg');
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    &__text{
+        flex: 1;
+        font-size: 4vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+}
+.footer{
+    height: 10%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    &__empty{
+        flex: 1;
+    }
+    &__social{
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+
+
+
+
