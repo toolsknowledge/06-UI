@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            div{
+                
+                width: 160px;
+                height: 80px;
+                border: 8px solid yellow;
+                padding: 20px;
+            }
+
+            #b-1{
+                box-sizing: content-box;
+                /*
+                    width : 160 + (2*20) + (2*8) = 216px
+
+                    height : 80+(2*20)+(2*8)   = 136px
+                */
+            }
+
+            #b-2{
+                box-sizing: border-box;
+
+                /*
+                    width : 160 - (2*20) - (2*8) = 104px;
+                    height : 80 - (2*20) - (2*8) = 24px
+                */
+            }
+        </style>
+    </head>
+    <body>
+        <div id="b-1"></div>
+        <div id="b-2"></div>
+    </body>
+</html>
