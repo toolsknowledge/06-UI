@@ -1,0 +1,154 @@
+html{
+  --nav-load-time:600ms;  
+  --nav-list-time:600ms;
+}
+body{
+    margin: 0px;
+}
+nav{
+    background-color: #203040;
+    padding: 10px;
+    animation: nav-load var(--nav-load-time) ease-in;
+}
+ul{
+    color: white;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+
+
+a{
+    text-decoration: none;
+    color: white;
+    margin: 30px;
+    padding: 10px;
+}
+
+a:hover{
+    background-color: #ffffff44;
+}
+
+
+section{
+    padding: 30px;
+}
+
+@keyframes nav-load{
+    0%{
+        transform: translateY(-100%);
+    }
+
+    100%{
+        transform: translateY(0%);
+    }
+}
+
+
+nav li{
+    animation: list-amination;
+    animation-duration: var(--nav-list-time);
+    animation-delay: var(--nav-load-time);
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+    transform: scale(0);
+}
+
+nav li:first-child{
+    animation-name: first-person;
+    transform: translateX(-1000);
+}
+
+nav li:last-child{
+    animation-name: last-person;
+    transform: translateX(1000);
+}
+
+@keyframes first-person{
+    0%{
+        transform: translateX(-1000%);
+    }
+    90%{
+        transform: translateX(50%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+
+
+
+
+
+@keyframes list-amination{
+    0%{
+        transform: scale(0);
+    }
+
+    90%{
+        transform: scale(1.5);
+    }
+
+    100%{
+        transform: scale(1);
+    }
+}
+
+
+@keyframes last-person{
+    0%{
+        transform: translateX(1000%);
+    }
+    90%{
+        transform: translateX(50%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+
+
+
+h1{
+    animation-name: heading-animation;
+    animation-duration: 300ms;
+    animation-fill-mode: forwards;
+    transform: translateX(-100%);
+    animation-delay: 1200ms;
+}
+
+p{
+    animation-name: paragrahs-animations;
+    animation-duration: 300ms;
+    animation-fill-mode: forwards;
+    animation-delay: 1500ms;
+    transform: translateY(-25%);
+}
+
+@keyframes heading-animation{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+
+@keyframes paragrahs-animations{
+    0%{
+        transform: translateY(-25%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+
+
+
+
+
+
